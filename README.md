@@ -1,1 +1,0 @@
-# ethicavision-website
