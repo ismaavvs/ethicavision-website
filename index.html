@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ethica Vision | Recensioni</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+
+    <div class="container">
+      <header class="site-header">
+        <img src="assets/logo.jpeg" alt="Logo Ethica Vision" class="logo" />
+        <div class="header-text">
+          <h1>ETHICA VISION</h1>
+          <p class="subtitle">La tua opinione fa la differenza</p>
+        </div>
+      </header>
+
+      <main class="main-layout">
+        <section class="form-section glass-panel">
+          <h2>Lascia una recensione</h2>
+          <form id="review-form">
+            <div class="input-group">
+              <input
+                type="text"
+                id="author"
+                placeholder="Il tuo nome"
+                required
+              />
+            </div>
+
+            <div class="input-group">
+              <select id="rating" required>
+                <option value="" disabled selected>
+                  Dai un voto (1-5 stelle)
+                </option>
+                <option value="5">⭐⭐⭐⭐⭐ - Eccellente</option>
+                <option value="4">⭐⭐⭐⭐ - Molto buono</option>
+                <option value="3">⭐⭐⭐ - Nella media</option>
+                <option value="2">⭐⭐ - Scarso</option>
+                <option value="1">⭐ - Pessimo</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <textarea
+                id="text"
+                placeholder="Condividi la tua esperienza con noi..."
+                rows="5"
+                required
+              ></textarea>
+            </div>
+
+            <div class="privacy-checkbox">
+              <input type="checkbox" id="privacy-consent" required />
+              <label for="privacy-consent">
+                Accetto la
+                <a href="privacy.html" target="_blank">Privacy Policy</a> e i
+                <a href="terms.html" target="_blank">Termini</a>.
+              </label>
+            </div>
+
+            <button type="submit" class="glow-btn">Pubblica Recensione</button>
+          </form>
+        </section>
+
+        <section class="reviews-section glass-panel">
+          <div class="reviews-header">
+            <h2>Cosa dicono di noi</h2>
+            <div class="badge">Live</div>
+          </div>
+
+          <div id="reviews-container" class="custom-scrollbar"></div>
+
+          <div class="load-more-container">
+            <button
+              id="load-more-btn"
+              class="outline-btn"
+              style="display: none"
+            >
+              Carica altre
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>&copy; 2026 Ethica Vision. Tutti i diritti riservati.</p>
+        <div class="legal-links">
+          <a href="privacy.html">Privacy Policy</a>
+          <span class="dot">•</span>
+          <a href="terms.html">Termini e Condizioni</a>
+          <span class="dot">•</span>
+          <a href="cookie.html">Cookie Policy</a>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
